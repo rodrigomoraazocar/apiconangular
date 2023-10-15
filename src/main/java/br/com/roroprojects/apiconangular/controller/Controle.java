@@ -14,7 +14,7 @@ import br.com.roroprojects.apiconangular.model.Cliente;
 import br.com.roroprojects.apiconangular.repository.Repositorio;
 
 @RestController
-@CrossOrigin(origins = "https://apiconangular-frontend-3v8nk7zvw-rodrigomoraazocars-projects.vercel.app") //Puerta del front end 
+//@CrossOrigin(origins = "https://apiconangular-frontend-3v8nk7zvw-rodrigomoraazocars-projects.vercel.app") //Puerta del front end 
 public class Controle {
 
 	@Autowired
