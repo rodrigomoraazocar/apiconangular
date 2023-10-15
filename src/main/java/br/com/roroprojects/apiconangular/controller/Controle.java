@@ -26,7 +26,7 @@ public class Controle {
 		return acao.save(c);
 	}
 	
-	@GetMapping("/listar")
+	@GetMapping("/")
 	public Iterable<Cliente> selecionar () {
 		
 		return acao.findAll();
