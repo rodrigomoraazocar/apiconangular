@@ -15,7 +15,7 @@ public class CorsConfig {
         
         config.setAllowCredentials(true);
         // Solo permite a tu dominio frontend
-        config.addAllowedOrigin("https://apiconangular-frontend.vercel.app");
+        config.addAllowedOrigin("*");
         config.addAllowedHeader("*");
         config.addAllowedMethod("GET");
         config.addAllowedMethod("POST");
