@@ -12,15 +12,10 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         
-        // Configura los orígenes permitidos (URL de tu frontend)
-       // config.addAllowedOrigin("https://apiconangular-frontend-3v8nk7zvw-rodrigomoraazocars-projects.vercel.app");
-
-        
-        // Configura otros encabezados y métodos permitidos según tu necesidad
+        config.setAllowCredentials(true);
+        config.addAllowedOrigin("*");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
-        config.addAllowedOrigin("*"); 
-
         
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
