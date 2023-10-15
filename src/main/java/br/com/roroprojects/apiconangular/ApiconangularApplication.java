@@ -9,5 +9,4 @@ public class ApiconangularApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ApiconangularApplication.class, args);
 	}
-
 }
