@@ -13,9 +13,13 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
         
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("*");
+        // Solo permite a tu dominio frontend
+        config.addAllowedOrigin("https://apiconangular-frontend.vercel.app");
         config.addAllowedHeader("*");
-        config.addAllowedMethod("*");
+        config.addAllowedMethod("GET");
+        config.addAllowedMethod("POST");
+        config.addAllowedMethod("PUT");
+        config.addAllowedMethod("DELETE");
         
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
